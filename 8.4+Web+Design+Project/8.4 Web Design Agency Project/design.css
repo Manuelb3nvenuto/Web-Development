@@ -34,7 +34,7 @@ body {
   
   /* Contenedor para los productos */
   .products {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
@@ -74,8 +74,8 @@ body {
   /* Responsivo: en pantallas más pequeñas apilamos los productos */
   @media (max-width: 768px) {
     .products {
-      flex-direction: column; /* Cambiar la disposición a columna en pantallas pequeñas */
-      align-items: center;
+      flex-direction: auto; /* Cambiar la disposición a columna en pantallas pequeñas */
+      align-items: auto;
     }
   
     .card {
