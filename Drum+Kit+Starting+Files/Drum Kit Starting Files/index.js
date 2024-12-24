@@ -5,9 +5,11 @@ document.querySelectorAll(".drum").forEach(button => {
   document.querySelectorAll(".drum").forEach(button => function(){
     button.addEventListener("keypress", function(event){
       console.log(event)
+      makeSound(event.key);
+      buttonAnimation(event.key);
     })
   })
-  
+
   
   function handleClick(event) {
     // Obtener el texto del botón que se presionó
@@ -64,5 +66,18 @@ document.querySelectorAll(".drum").forEach(button => {
     }
     //llamando a la funcion para reproducir each sound
     audio.play();
+  }
+  
+  
+  function buttonAnimation(currentKey) {
+  
+    var activeButton = document.querySelector("." + currentKey);
+  
+    activeButton.classList.add("pressed");
+  
+    setTimeout(function() {
+      activeButton.classList.remove("pressed");
+    }, 100);
+  
   }
   
