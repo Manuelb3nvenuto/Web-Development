@@ -18,3 +18,16 @@ build/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+#API
+.env
+config/*.json
+secrets/*.txt
+
+
+# IDE
+USERNAME=manuel
+PASSWORD=password
+API_KEY=9e8a34a2-b1f7-4c74-9781-457c53ee52a8
+BEARER_TOKEN=017aa155-30b9-4f7f-bd71-0c4e68a61e04
+
